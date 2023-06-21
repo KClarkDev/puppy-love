@@ -24,8 +24,8 @@ i:hover {
   border: none;
 }
 
-.button-container:hover + .image-container,
-.button-container:active + .image-container {
+.icon-container:hover + .image-container,
+.icon-container:active + .image-container {
   bottom: 0; /* Move the image into the viewport */
 }
 
@@ -34,8 +34,9 @@ i:hover {
   margin-bottom: -3px;
 }
 
-.footer-animation__image--1:hover {
-  -webkit-animation: rotation 1s infinite linear;
+.animated-rotate:hover,
+.animated-rotate:active {
+  -webkit-animation: rotation 0.5s infinite linear;
 }
 
 @-webkit-keyframes rotation {
