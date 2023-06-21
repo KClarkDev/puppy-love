@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+i {
+  color: white;
+  line-height: 100%;
+  font-size: 75px;
+  transform: scale(1.1);
+  transition: 0.5s;
+  z-index: 102;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.image-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  transition: bottom 2s;
+  padding: -2px;
+  border: none;
+}
+
+.button-container:hover + .image-container,
+.button-container:active + .image-container {
+  bottom: 0; /* Move the image into the viewport */
+}
+
+#hover-img {
+  width: 100vw;
+  margin-bottom: -3px;
+}
