@@ -6,6 +6,7 @@ var data = {
 
 var fetchData = {
   method: "GET",
+  mode: "no-cors",
   // body: JSON.stringify(data),
   headers: new Headers({
     "Content-Type": "application/json; charset=UTF-8",
